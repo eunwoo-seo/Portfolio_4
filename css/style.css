@@ -1,6 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    background-color: #eee;
 }
 
 
@@ -12,11 +13,11 @@ body {
     height: 100%;
     background-color: darkblue;
     padding: 10px;
-    color: white;
     transition: all;
     transition-duration: 0.5s;
     text-align: center;
 }
+
 .side-navbar:hover {
     text-align: left;
     padding: 10px;
@@ -27,7 +28,6 @@ body {
     height: 40px;
     margin-top: 20px;
 }
-
 
 .side-navbar:hover .side-menu span {
     animation-name: sidemenu;
@@ -40,9 +40,6 @@ body {
     transform: translateX(-150px);
 }
 
-
-
-
 @keyframes sidemenu {
     0% {   transform: translateX(-150px)  }
     100% {   transform: translateX(0)   }
@@ -51,6 +48,7 @@ body {
 
 
 .main-navbar {
+    background-color: white;
     padding: 5px;
     width: 100%;
     height: 50px;
@@ -96,13 +94,18 @@ body {
 .navbar-menu {
     align-items: center;
     margin-right: 10px;
-    display: flex;
-    
+    display: flex;   
 }    
     
 .navbar-menu a {
     color: grey;
     margin-right: 30px;
+}
+.side-menu a {
+    color: white;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -204,10 +207,7 @@ body {
 }
 
 .layout {
-    background-color: #eee;
-    height: 100vh;
     margin-left: 40px;
-
 }
 
 .chart {
@@ -242,7 +242,6 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
-
 
 @media screen and (max-width: 768px) {
     .layout {
